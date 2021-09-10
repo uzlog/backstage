@@ -1,5 +1,16 @@
 # example-backend
 
+## 0.2.46
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/plugin-auth-backend@0.4.0
+  - @backstage/plugin-scaffolder-backend@0.15.5
+  - @backstage/integration@0.6.4
+  - @backstage/backend-common@0.9.3
+  - @backstage/plugin-catalog-backend@0.13.8
+
 ## 0.2.44
 
 ### Patch Changes

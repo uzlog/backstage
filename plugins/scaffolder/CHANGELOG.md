@@ -1,5 +1,14 @@
 # @backstage/plugin-scaffolder
 
+## 0.11.4
+
+### Patch Changes
+
+- 96fef17a1: Upgrade git-parse-url to v11.6.0
+- Updated dependencies
+  - @backstage/core-components@0.4.2
+  - @backstage/integration@0.6.4
+
 ## 0.11.3
 
 ### Patch Changes

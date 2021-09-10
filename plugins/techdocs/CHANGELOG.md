@@ -1,5 +1,15 @@
 # @backstage/plugin-techdocs
 
+## 0.11.2
+
+### Patch Changes
+
+- 96fef17a1: Upgrade git-parse-url to v11.6.0
+- Updated dependencies
+  - @backstage/core-components@0.4.2
+  - @backstage/integration@0.6.4
+  - @backstage/plugin-catalog@0.6.15
+
 ## 0.11.1
 
 ### Patch Changes

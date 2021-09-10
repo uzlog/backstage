@@ -1,5 +1,12 @@
 # @backstage/core-components
 
+## 0.4.2
+
+### Patch Changes
+
+- 60c03f69a: Change the styling of the `<DependencyGraph>` to have more contrast in light
+  mode. Nodes now have a design similar to material UI buttons.
+
 ## 0.4.1
 
 ### Patch Changes

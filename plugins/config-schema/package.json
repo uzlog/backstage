@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@backstage/config": "^0.1.6",
-    "@backstage/core-components": "^0.4.1",
+    "@backstage/core-components": "^0.4.2",
     "@backstage/core-plugin-api": "^0.1.7",
     "@backstage/errors": "^0.1.1",
     "@backstage/theme": "^0.2.10",
