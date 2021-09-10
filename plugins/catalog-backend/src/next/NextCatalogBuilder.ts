@@ -32,6 +32,7 @@ import {
 import { Config } from '@backstage/config';
 import { ScmIntegrations } from '@backstage/integration';
 import { createHash } from 'crypto';
+import { Router } from 'express';
 import lodash from 'lodash';
 import { Logger } from 'winston';
 import {
@@ -80,6 +81,7 @@ import {
   createRandomRefreshInterval,
   RefreshIntervalFunction,
 } from './refresh';
+import { createNextRouter } from './NextRouter';
 
 export type CatalogEnvironment = {
   logger: Logger;
@@ -289,6 +291,7 @@ export class NextCatalogBuilder {
     locationAnalyzer: LocationAnalyzer;
     processingEngine: CatalogProcessingEngine;
     locationService: LocationService;
+    router: Router;
   }> {
     const { config, database, logger } = this.env;
 
@@ -345,12 +348,22 @@ export class NextCatalogBuilder {
       orchestrator,
     );
 
+    const router = await createNextRouter({
+      entitiesCatalog,
+      locationAnalyzer,
+      locationService,
+      processingEngine,
+      logger,
+      config,
+    });
+
     return {
       entitiesCatalog,
       locationsCatalog,
       locationAnalyzer,
       processingEngine,
       locationService,
+      router,
     };
   }
 
